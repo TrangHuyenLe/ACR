@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: default
+  name: acr-config
+  labels:
+    environment: prod
+data:
+  SECRET: 92d8716703334cad278e983386aa409a8f1e6738da04a33716507dc25128771a
+  JOB_ENCRYPTION_KEY: d64cbd9be6c5a760745b67916c1a9eb23957f3e8f5728cb2430d7538db457fc7
+  AMQP_ENCRYPTION_KEY: 6c01f2b7fed57400ff30bda607cc5b39f25a68e2cece91117de2845e7bdd81ca
+  BIND: 0.0.0.0
+  PORT: "8080"
+  RABBITMQ_CONNECTION_STRING: RABBIT_MQ
+  MONGODB_CONNECTION_STRING: MONGO_URI
+  DATABASE_NAME: Automatic_Course_Registration_System
+  INIT_ROOT_PASSWORD: "123456"
+  LOG_WORKER_DOING: "0"
+  LOG_WORKER_PING: "0"
+  TYPE: rabbit1
+

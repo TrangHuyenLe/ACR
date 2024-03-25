@@ -1,0 +1,17 @@
+{
+  "name": "shared-configs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf dist && tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "shared-connections": "workspace:*",
+    "shared-entities": "workspace:*",
+    "shared-utils": "workspace:^"
+  }
+}
